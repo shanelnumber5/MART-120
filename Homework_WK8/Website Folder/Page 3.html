@@ -27,58 +27,57 @@
     <title>Contact Me</title> 
 
     <script>
-       function getInformation()
-       {
-           var firstName 
-           name = document.getElementById("fName").value;
-           if(name == "")
-           {
-               window.alert("First Name is Required");
-               document.getElementById("fName").style.backgroundColor = "red";
-               document.getElementById("fName").style.focus();
-           }
-           else
-           {
-                document.getElementById("fName").style.backgroundColor = "white"
-           }
-           var lastName 
-           name = document.getElementById("lName").value;
-           if(name == "")
-           {
-               window.alert("Last Name is Required");
-           }
-           var Email 
-           name = document.getElementById("Email").value;
-           if(name == "")
-           {
-               window.alert("Email is Required");
-           }
-           var myYes 
-           name = document.getElementById("myYes").value;
-           if(chkMyYes.checked == "")
-           {
-               window.alert("Please Agree to the Terms of Agreement.");
-           }
-           var myNo 
-           name = document.getElementById("myNo").value;
-           if (chkMyNo.checked == false)
-           {
-               window.alert("Please Agree to the Terms of Agreement.")
-           }
+        function getInformation()
+        {
+            var firstName; 
+            name = document.getElementById("fName").value;
+            if(name == "")
+            {
+                window.alert("First Name is Required");
+                document.getElementById("fName").style.backgroundColor = "red"; 
+                document.getElementById("fName").focus();
+            }
            
-           
-       }
-       window.alert("Hi " + firstName + " " + lastName);
-    </script>
+            var lastName; 
+            lastName = document.getElementById("lName").value;
+            if(lastName == "")
+            {
+                window.alert("Last Name is Required");
+            }
+            var Email; 
+            Email = document.getElementById("Email").value;
+            if(Email == "")
+            {
+                window.alert("Email is Required");
+            }
+            var myYes; 
+            myYes = document.getElementById("myYes");
+            if(myYes.checked == false)
+            {
+                window.alert("Please Agree to the Terms of Agreement.");
+            }
+            var myNo; 
+
+            myNo = document.getElementById("myNo");
+            if (myNo.checked == false)
+            {
+                window.alert("Please Agree to the Terms of Agreement.")
+            }
+            
+            
+        }
+        window.alert("Hi " + firstName + " " + lastName);
+     </script>
 </head>  
 
 <body>    
     
     <p></p>
-    <h2><span><center><u>Want to get to know me better?</u></span></center></h2>
+    <h2><span><center><u>Want to Get to Know ME Better?</u></span></center></h2>
     <h1><span><center>Contact Me!</center></span></h1>
     
-    <center><form type="Post">
+    <center>
+        <form type="Post">
         <table>
             <tr>
                 <td><span class="myClass">First Name:</span></td>
@@ -103,7 +102,9 @@
         <p><span class="myClass"><input type="radio" id="myNo" >No</span></p> 
 
         <h2><button id="mySubmit" class="btn-primary" onclick="getInformation();" >Submit</button></h2>
-    </form></center>
+    </form>
+
+</center>
 
     <center><img src="./images/weirdart.jpg" height='260' width='350' />  <h5><span>(Weird Student Artwork Submitted to Me This Week)</span></h5></html></center>
 
