@@ -34,7 +34,12 @@
            if(name == "")
            {
                window.alert("First Name is Required");
-               document.getElementById("fName").style.backgroundColor = "red"; style.focus();
+               document.getElementById("fName").style.backgroundColor = "red";
+               document.getElementById("fName").style.focus();
+           }
+           else
+           {
+                document.getElementById("fName").style.backgroundColor = "white"
            }
            var lastName 
            name = document.getElementById("lName").value;
