@@ -67,9 +67,11 @@ function draw()
         greenenemyDirection *= -1;
     }
 
-    // blue enemy
+    //blue enemy
     fill(48,157,240)
-    circle(shapeX+80, shapeY-200, 30);
+    circle(shapeX+80, shapeY, 30);
+    move();
+    bounce();
 
     // orange enemy
     fill(252,188,41)
@@ -172,6 +174,19 @@ function draw()
         mouseShapeX = mouseX;
         mouseShapeY = mouseY;
     }
+
+    function move() 
+    {
+        shapeX = shapeX + shapeXSpeed;
+        shapeY = shapeY + shapeYSpeed;
+    }
+
+    function bounce()
+    {
+        if (shapeX < width || shapeX > 0)
+        shapeXSpeed = shapeXSpeed * -1;
     
-   
+        if (shapeY < height || shapeY > 0)
+        shapeYSpeed = shapeYSpeed * -1;
+    }
 
