@@ -111,6 +111,7 @@ function draw()
         textSize(100);
         text("You Win", width/2+280, height/2-50);
         text("Delicious Mold!", width/2+150, height/2+100);
+
     }
 
     // neon pink mouse click character
