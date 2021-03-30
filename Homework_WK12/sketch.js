@@ -104,7 +104,7 @@ function draw()
     }
     
     // check to see if the character has left the exit
-    if(characterX > width && characterY < width-50)
+    if(characterX > width && characterY> width-100)
     {
         fill(255, 248, 14);
         stroke(5);
